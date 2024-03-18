@@ -1,0 +1,100 @@
+body {
+    background-image: url('https://wallpaperset.com/w/full/7/7/a/31132.jpg');
+    /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+    /* Fallback background color */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.parking-block {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #333;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.parking-block img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.yellow {
+    background-color: #FFC107;
+}
+
+.red {
+    background-color: #F44336;
+}
+
+.booking-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#bookingName {
+    margin-top: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

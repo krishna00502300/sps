@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Smart Parking Management System</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Smart Parking Management System</h1>
+        <div class="parking-block" id="parking1" onclick="bookParking(1)"></div>
+        <div class="parking-block" id="parking2" onclick="bookParking(2)"></div>
+        <div class="parking-block" id="parking3" onclick="bookParking(3)"></div>
+        <div class="parking-block" id="parking4" onclick="bookParking(4)"></div>
+        <div class="parking-block" id="parking5" onclick="bookParking(5)"></div>
+        <div class="parking-block" id="parking6" onclick="bookParking(6)"></div>
+    </div>
+
+    <div class="booking-popup" id="bookingPopup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <label for="bookingName">Enter your name:</label>
+            <input type="text" id="bookingName" placeholder="Your Name">
+            <button onclick="confirmBooking()">Book Parking</button>
+            <button onclick="closePopup()">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Include Firebase scripts -->
+    <!-- <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-database.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.4/firebase-database-compat.js"></script>
+
+    <!-- Your Firebase config script goes here -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyBOxcm4LnMFoQwb9K9NbzI3-x7tFICES_I",
+  authDomain: "smart-parking-system-web-78f79.firebaseapp.com",
+  projectId: "smart-parking-system-web-78f79",
+  storageBucket: "smart-parking-system-web-78f79.appspot.com",
+  messagingSenderId: "791372575606",
+  appId: "1:791372575606:web:5e7eb890f3fabd9b9bc057",
+  measurementId: "G-0G87WZYBTL"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Your app.js script goes here -->
+    <script src="app.js"></script>
+</body>
+
+</html>
